@@ -1,4 +1,4 @@
-Desktop Entry]
+[Desktop Entry]
 Name=Hyprland
 Comment=An intelligent dynamic tiling Wayland compositor
 Exec=run-hyprland
