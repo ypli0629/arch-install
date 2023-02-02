@@ -3,7 +3,7 @@
 sudo pacman -S base-devel --noconfirm
 
 # soft
-yay autojump lazygit neovim google-chrome --noconfirm
+yay -S autojump lazygit neovim google-chrome --noconfirm
 
 # git
 git config --global user.email "liyapeng0629@gmail.com"
@@ -12,20 +12,24 @@ git config --global credential.helper store
 
 # fe
 yay -S nodejs npm pnpm --noconfirm
-yay -S webstorm webstorm-jre code --noconfirm
+# yay -S webstorm webstorm-jre --noconfirm
+yay -S code --noconfirm
 
 # java
-sudo yay -S intellij-idea-ultimate-edition intellij-idea-ultimate-edition-jre jdk11-openjdk maven gradle --noconfirm
+yay -S jdk11-openjdk maven gradle --noconfirm
+# yay -S intellij-idea-ultimate-edition intellij-idea-ultimate-edition-jre --noconfirm
 mkdir -p ~/.m2
 cp ./config/maven/settings.xml ~/.m2/
 
 # golang
-yay -S goland goland-jre go --noconfirm
+yay -S go --noconfirm
+# yay -S goland goland-jre --noconfirm
 go install github.com/swaggo/swag/cmd/swag@latest
 go install github.com/cosmtrek/air@latest
 
 # python
-yay -S python pycharm-professional --noconfirm
+yay -S python python-pip --noconfirm
+# yay -S pycharm-professional --noconfirm
 pip3 config set global.index-url https://mirror.sjtu.edu.cn/pypi/web/simple
 
 #rust
