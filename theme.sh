@@ -3,10 +3,10 @@ mkdir themes
 
 cd themes
 git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git
-cd WhiteSur-gtk-theme
-./install.sh --silent-mode
-./tweak.sh -g x2 --silent-mode
-cd ..
+# cd WhiteSur-gtk-theme
+# ./install.sh --silent-mode
+# ./tweak.sh -g x2 --silent-mode
+# cd ..
 
 git clone https://github.com/vinceliuice/grub2-themes.git
 cd grub2-themes
@@ -16,6 +16,11 @@ cd ..
 git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git
 cd WhiteSur-icon-theme
 ./install.sh -b
+cd ..
+
+git clone https://github.com/vinceliuice/WhiteSur-wallpapers.git
+cd WhiteSur-wallpapers
+sudo ./install-gnome-backgrounds.sh
 cd ..
 
 cd ..
