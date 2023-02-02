@@ -64,3 +64,16 @@ bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/
 #sh ./lunarvim_install.sh -y
 rm -rf ~/.config/lvim
 git clone https://github.com/ypli0629/lvim.git
+
+yay -S zsh --noconfirm
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+tee -a ~/.zshrc <<-'EOF'
+	alias szsh="source ~/.zshrc"
+	alias nvim="lvim"
+	alias nzsh="nvim ~/.zshrc"
+	alias pon="export http_proxy=http://127.0.0.1:7890; export https_proxy=http://127.0.0.1:7890; export all_proxy=socks5://127.0.0.1:7890"
+	alias poff="unset http_proxy; unset https_proxy; unset all_proxy"
+
+	export PATH=~/.local/bin:~/go/bin:~/.local/bin:$PATH
+EOF
+source ~/.zshrc
