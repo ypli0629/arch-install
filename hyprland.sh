@@ -7,4 +7,7 @@ yay -S bc blueberry bluez coreutils dbus findutils gawk gnunet jaq light network
 yay -S grim swappy slurp --noconfirm
 yay -S qt5-wayland qt6-wayland --noconfirm
 
-cp -r kitty hypr rofi dunst swaylock eww ~/.config
+cp -rf ./config/* ~/.config
+sudo cp ./hyprland/run-hyprland
+sudo cp /usr/share/wayland-sessions/hyprland.desktop /usr/share/wayland-sessions/hyprland.desktop.old
+sudo cp ./hyprland/hyprland.desktop /usr/share/wayland-sessions/
