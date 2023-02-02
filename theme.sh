@@ -20,7 +20,12 @@ cd ..
 
 git clone https://github.com/vinceliuice/WhiteSur-wallpapers.git
 cd WhiteSur-wallpapers
-sudo ./install-gnome-backgrounds.sh
+sudo ./install-gnome-backgrounds.sh -s 2k
+cd ..
+
+git clone https://github.com/vinceliuice/WhiteSur-cursors.git
+cd WhiteSur-cursors
+sudo ./install.sh
 cd ..
 
 cd ..
