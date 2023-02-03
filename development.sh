@@ -3,7 +3,7 @@
 sudo pacman -S base-devel --noconfirm
 
 # soft
-yay -S autojump lazygit neovim google-chrome --noconfirm
+yay -S autojump lazygit neovim google-chrome alacritty --noconfirm
 
 # git
 git config --global user.email "liyapeng0629@gmail.com"
