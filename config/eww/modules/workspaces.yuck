@@ -13,3 +13,4 @@
                     :class "ws icon"
                     :style "color: ${i.color};"
                     (label :style "font-size: 15pt;" :text "${ws-icons[i.number - 1]}"))))))
+

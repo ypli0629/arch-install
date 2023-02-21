@@ -8,6 +8,7 @@
 (include "./modules/volume.yuck")
 (include "./modules/workspaces.yuck")
 (include "./modules/launcher.yuck")
+(include "./modules/weather.yuck")
 
 (include "./windows/calendar.yuck")
 (include "./windows/music.yuck")
@@ -20,7 +21,9 @@
     :space-evenly false
     :halign "start"
     (launcher)
-    (workspaces)))
+    (workspaces)
+    (weather)
+    ))
 
 (defwidget right []
   (box
@@ -52,8 +55,8 @@
     :monitor 0
     :geometry (geometry :x "0%"
       :y "1%"
-      :width "96%"
-      :height "36px"
+      :width "95%"
+      :height "33px"
       :anchor "top center")
     :stacking "fg"
     :exclusive true
