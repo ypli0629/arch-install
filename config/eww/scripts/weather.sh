@@ -1,1 +1,1 @@
-curl -s 'wttr.in/?m&format=%c%C+%f' | sed 's/+//'
+curl -s 'wttr.in/nanjing?m&lang=zh&format=%c%C+%t' | sed 's/+//'
