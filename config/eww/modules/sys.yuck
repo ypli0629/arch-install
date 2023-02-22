@@ -3,7 +3,7 @@
     :class "module"
     :space-evenly false
     :spacing 5
-    :style "font-family: ProductSans;"
+    :style "font-family: NotoSans;"
     (circular-progress
       :value "${EWW_CPU.avg}"
       :class "cpubar"

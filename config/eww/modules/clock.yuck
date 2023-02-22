@@ -3,16 +3,16 @@
 (defwidget clock_module []
   (eventbox
     :onhover "${EWW_CMD} update date_rev=true"
-    :style "font-family: ProductSans;"
+    :style "font-family: NotoSans;"
     :onhoverlost "${EWW_CMD} update date_rev=false"
     (overlay
       :class "module"
       (box
         :space-evenly false
-        :style "font-family: ProductSans;"
+        :style "font-family: NotoSans;"
         (label
           :text {time.hour}
-          :style "font-family: ProductSans;"
+          :style "font-family: NotoSans;"
           :class "hour")
         (label
           :text ":")
@@ -21,9 +21,9 @@
           :class "minute"))
       (revealer
         :reveal date_rev
-        :style "font-family: ProductSans;"
+        :style "font-family: NotoSans;"
         (button
           :class "date"
           :onclick "${EWW_CMD} open --toggle calendar"
-          :style "font-family: ProductSans;"
+          :style "font-family: NotoSans;"
           {time.date})))))
