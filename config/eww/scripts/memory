@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-while true; do    
+while true; do
+  export LANG=en_US.UTF-8    
   # human-readable
   freeH=$(free -h --si | rg "Mem:")
   # non-human-readable
