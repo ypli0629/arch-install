@@ -1,7 +1,7 @@
 (defwidget calendar-win []
   (box
     :class "calendar-win"
-    :style "font-family: ProductSans;"
+    :style "font-family: NotoSans;"
     (calendar)))
 
 (defwindow calendar
@@ -11,6 +11,6 @@
     :y "0%"
   	:anchor "top right"
     :width "0px"
-    :style "font-family: ProductSans;"
+    :style "font-family: NotoSans;"
     :height "0px")
   (calendar-win))

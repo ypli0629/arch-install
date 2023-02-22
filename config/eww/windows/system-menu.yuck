@@ -8,18 +8,18 @@
       :space-evenly false
       (label
         :class "time"
-        :style "font-family:ProductSans;"
+        :style "font-family:NotoSans;"
         :text "${time.hour}:${time.minute}")
       (box
         :class "date-box"
         :space-evenly false
         (label
           :class "date"
-          :style "font-family:ProductSans;"
+          :style "font-family:NotoSans;"
           :text {time.date})
         (label
           :class "day"
-          :style "font-family:ProductSans;"
+          :style "font-family:NotoSans;"
           :text {time.day})))
 
     (centerbox
@@ -45,7 +45,7 @@
             ""))
         (label
           :text {net.essid}
-          :style "font-family:ProductSans;"
+          :style "font-family:NotoSans;"
           :xalign 0.5
           :limit-width 15))
 
@@ -69,7 +69,7 @@
             ""))
         (label
           :text {bluetooth.text}
-          :style "font-family:ProductSans;"
+          :style "font-family:NotoSans;"
           :xalign 0.5
           :tooltip "${bluetooth.text} ${bluetooth.battery}"
           :limit-width 15))
@@ -87,7 +87,7 @@
             airplane))
         (label
           :text "Airplane Mode"
-          :style "font-family:ProductSans;"
+          :style "font-family:NotoSans;"
           :xalign 0.5
           :limit-width 16)))
 
@@ -98,7 +98,7 @@
         :class "volume-slider-box"
         :space-evenly false
         (button
-          :style "font-family:ProductSans;"
+          :style "font-family:NotoSans;"
           :class "volume-icon icon"
           :onclick "scripts/volume mute SINK"
           {volume.icon})
@@ -113,7 +113,7 @@
         (button
           :class "volume-icon icon"
           :onclick "scripts/volume mute SOURCE"
-          :style "font-family:ProductSans;"
+          :style "font-family:NotoSans;"
           "")
         (scale
           :class "volume-bar"
@@ -125,7 +125,7 @@
         :space-evenly false
         (button
           :class "brightness-slider-icon icon"
-          :style "font-family:ProductSans;"
+          :style "font-family:NotoSans;"
           {brightness.icon})
         (scale
           :class "brightness-slider" 
@@ -171,7 +171,7 @@
         :halign "end"
         (circular-progress
           :value {memory.percentage}
-          :style "font-family:ProductSans;"
+          :style "font-family:NotoSans;"
           :class "sys-mem"
           :thickness 3
           (label
@@ -181,12 +181,12 @@
           :orientation "v"
           (label
             :text "memory"
-            :style "font-family:ProductSans;"
+            :style "font-family:NotoSans;"
             :halign "start"
             :class "sys-text-mem")
           (label
             :text "${memory.used} | ${memory.total}"
-            :style "font-family:ProductSans;"
+            :style "font-family:NotoSans;"
             :halign "start"
             :class "sys-text-sub"))))
 
@@ -198,19 +198,19 @@
         :halign "start"
         (label
           :class "battery-icon icon"
-          :style "color: ${battery.color}; font-family:ProductSans;"
+          :style "color: ${battery.color}; font-family:NotoSans;"
           :text {battery.icon})
         (label
           :class "battery-percentage"
-          :style "font-family:ProductSans;"
+          :style "font-family:NotoSans;"
           :text {EWW_BATTERY["BAT0"].capacity})
         (label
           :class "battery-status"
-          :style "font-family:ProductSans;"
+          :style "font-family:NotoSans;"
           :text {battery.status})
         (label
           :class "battery-wattage"
-          :style "font-family:ProductSans;"
+          :style "font-family:NotoSans;"
           :text {battery.wattage}))
       (label)
       (box
