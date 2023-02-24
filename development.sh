@@ -3,7 +3,8 @@
 sudo pacman -S base-devel --noconfirm
 
 # soft
-yay -S autojump lazygit neovim google-chrome alacritty --noconfirm
+yay -S autojump lazygit neovim google-chrome alacritty \
+	switchhosts-bin meld deepin-wine-wechat qqmusic-bin linuxqq --noconfirm
 
 # git
 git config --global user.email "liyapeng0629@gmail.com"
@@ -58,13 +59,6 @@ sudo systemctl enable docker
 
 yay -S clash-for-windows-bin --noconfirm
 
-# LunnarVim
-bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
-#curl https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh >>lunarvim_install.sh
-#sh ./lunarvim_install.sh -y
-rm -rf ~/.config/lvim
-git clone https://github.com/ypli0629/lvim.git
-
 yay -S zsh --noconfirm
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 tee -a ~/.zshrc <<-'EOF'
@@ -77,3 +71,10 @@ tee -a ~/.zshrc <<-'EOF'
 	export PATH=~/.local/bin:~/go/bin:~/.local/bin:$PATH
 EOF
 source ~/.zshrc
+
+# LunnarVim
+bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+#curl https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh >>lunarvim_install.sh
+#sh ./lunarvim_install.sh -y
+rm -rf ~/.config/lvim
+git clone https://github.com/ypli0629/lvim.git
