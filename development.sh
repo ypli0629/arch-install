@@ -4,7 +4,8 @@ sudo pacman -S base-devel --noconfirm
 
 # soft
 yay -S autojump lazygit neovim google-chrome alacritty \
-	switchhosts-bin meld deepin-wine-wechat qqmusic-bin linuxqq --noconfirm
+	switchhosts-bin meld deepin-wine-wechat qqmusic-bin linuxqq \
+	wireshark-qt wps-office-cn grub-customizer dconf postman-bin --noconfirm
 
 # git
 git config --global user.email "liyapeng0629@gmail.com"
