@@ -6,7 +6,7 @@ sudo pacman -S base-devel --noconfirm
 yay -S autojump lazygit neovim google-chrome alacritty \
 	switchhosts-bin meld deepin-wine-wechat qqmusic-bin linuxqq \
 	wireshark-qt wps-office-cn grub-customizer dconf postman-bin sunloginclient steam flameshot-git \
-	xunlei-bin --noconfirm
+	xunlei-bin calibare wps-office-cn wps-office-mime-cn wps-office-mui-zh-cn --noconfirm
 
 # git
 git config --global user.email "liyapeng0629@gmail.com"
@@ -72,6 +72,8 @@ tee -a ~/.zshrc <<-'EOF'
 
 	export PATH=~/.local/bin:~/go/bin:~/.local/bin:$PATH
 EOF
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 source ~/.zshrc
 
 # LunnarVim
