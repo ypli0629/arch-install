@@ -15,24 +15,24 @@ git config --global credential.helper store
 
 # fe
 yay -S nodejs npm pnpm --noconfirm
-# yay -S webstorm webstorm-jre --noconfirm
+yay -S webstorm webstorm-jre --noconfirm
 yay -S code --noconfirm
 
 # java
 yay -S jdk11-openjdk maven gradle --noconfirm
-# yay -S intellij-idea-ultimate-edition intellij-idea-ultimate-edition-jre --noconfirm
+yay -S intellij-idea-ultimate-edition intellij-idea-ultimate-edition-jre --noconfirm
 mkdir -p ~/.m2
 cp ./config/maven/settings.xml ~/.m2/
 
 # golang
 yay -S go --noconfirm
-# yay -S goland goland-jre --noconfirm
+yay -S goland goland-jre --noconfirm
 go install github.com/swaggo/swag/cmd/swag@latest
 go install github.com/cosmtrek/air@latest
 
 # python
 yay -S python python-pip --noconfirm
-# yay -S pycharm-professional --noconfirm
+yay -S pycharm-professional --noconfirm
 pip3 config set global.index-url https://mirror.sjtu.edu.cn/pypi/web/simple
 
 #rust
