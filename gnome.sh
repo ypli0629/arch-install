@@ -1,4 +1,6 @@
 #!/bin/bash
+sudo pacman -S mutter-x11-scaling gnome-terminal-transparency --noconfirm
+
 for i in $(seq 1 9)
 do 
     gsettings set org.gnome.shell.keybindings switch-to-application-${i} '[]';
