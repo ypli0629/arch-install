@@ -6,7 +6,7 @@ sudo pacman -S base-devel --noconfirm
 yay -S autojump lazygit neovim google-chrome alacritty \
 	switchhosts-bin meld deepin-wine-wechat qqmusic-bin linuxqq \
 	wireshark-qt wps-office-cn grub-customizer dconf postman-bin sunloginclient steam flameshot-git \
-	xunlei-bin calibare wps-office-cn wps-office-mime-cn wps-office-mui-zh-cn --noconfirm
+	xunlei-bin calibare wps-office-cn wps-office-mime-cn wps-office-mui-zh-cn gnome-terminal-transparency --noconfirm
 
 # git
 git config --global user.email "liyapeng0629@gmail.com"
@@ -14,7 +14,7 @@ git config --global user.name "ypli0629"
 git config --global credential.helper store
 
 # fe
-yay -S nodejs npm pnpm --noconfirm
+yay -S nodejs npm pnpm yarn --noconfirm
 yay -S webstorm webstorm-jre --noconfirm
 yay -S code --noconfirm
 
@@ -76,9 +76,9 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 source ~/.zshrc
 
-# LunnarVim
-bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
-#curl https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh >>lunarvim_install.sh
-#sh ./lunarvim_install.sh -y
-rm -rf ~/.config/lvim
-git clone https://github.com/ypli0629/lvim.git
+# # LunnarVim
+# bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+# #curl https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh >>lunarvim_install.sh
+# #sh ./lunarvim_install.sh -y
+# rm -rf ~/.config/lvim
+# git clone https://github.com/ypli0629/lvim.git
