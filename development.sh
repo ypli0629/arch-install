@@ -62,6 +62,10 @@ sudo systemctl enable docker
 
 yay -S clash-for-windows-bin --noconfirm
 
+# astronvim
+git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+git clone https://github.com/ypli0629/astronvim_config.git ~/.config/nvim/lua/user
+
 yay -S zsh --noconfirm
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 tee -a ~/.zshrc <<-'EOF'
