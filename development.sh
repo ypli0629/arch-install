@@ -86,10 +86,3 @@ EOF
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 source ~/.zshrc
-
-# # LunnarVim
-# bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
-# #curl https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh >>lunarvim_install.sh
-# #sh ./lunarvim_install.sh -y
-# rm -rf ~/.config/lvim
-# git clone https://github.com/ypli0629/lvim.git
