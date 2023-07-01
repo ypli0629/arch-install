@@ -36,11 +36,17 @@ yay -S python python-pip --noconfirm
 yay -S pycharm-professional --noconfirm
 pip3 config set global.index-url https://mirror.sjtu.edu.cn/pypi/web/simple
 
-#rust
+# rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs >>./rustup.sh
 sh ./rustup.sh -y
 
-#luarocks
+# datagrip
+yay -S datagrip datagrip-jre --noconfirm
+
+# clion
+yay -S clion clion-jre clion-gdb --noconfirm
+
+# luarocks
 mkdir ./tools
 git clone https://github.com/luarocks/luarocks.git -b v3.9.2 ./tools/luarocks
 cd ./tools/luarocks
