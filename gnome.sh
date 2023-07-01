@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo pacman -S mutter-x11-scaling gnome-terminal-transparency --noconfirm
+yay -Sy mutter-x11-scaling gnome-terminal-transparency --noconfirm
 
 for i in $(seq 1 9)
 do 
