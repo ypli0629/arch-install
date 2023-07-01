@@ -7,7 +7,7 @@ yay -S autojump lazygit neovim google-chrome alacritty \
 	switchhosts-bin meld deepin-wine-wechat qqmusic-bin linuxqq \
 	wireshark-qt wps-office-cn grub-customizer dconf postman-bin sunloginclient steam flameshot-git \
 	xunlei-bin calibare wps-office-cn wps-office-mime-cn wps-office-mui-zh-cn \
-	 virtualbox virtualbox-host-modules-arch dingtalk-bin wemeet-bin xclip --noconfirm
+	 virtualbox virtualbox-host-modules-arch dingtalk-bin wemeet-bin xclip bear timeshift grub-btrfs --noconfirm
 
 # git
 git config --global user.email "liyapeng0629@gmail.com"
