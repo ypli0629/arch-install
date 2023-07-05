@@ -7,7 +7,7 @@ yay -S autojump lazygit neovim google-chrome alacritty \
 	switchhosts-bin meld deepin-wine-wechat qqmusic-bin linuxqq \
 	wireshark-qt wps-office-cn grub-customizer dconf postman-bin sunloginclient steam flameshot-git \
 	xunlei-bin calibare wps-office-cn wps-office-mime-cn wps-office-mui-zh-cn \
-	 virtualbox virtualbox-host-modules-arch dingtalk-bin wemeet-bin xclip bear timeshift grub-btrfs --noconfirm
+	virtualbox virtualbox-host-modules-arch dingtalk-bin wemeet-bin xclip bear timeshift grub-btrfs --noconfirm
 
 # git
 git config --global user.email "liyapeng0629@gmail.com"
@@ -68,6 +68,11 @@ sudo systemctl enable docker
 
 yay -S clash-for-windows-bin --noconfirm
 
+yay -S nvm --noconfirm
+source /usr/share/nvm/init-nvm.sh
+
+unzip ./ssh/ssh.zip ~
+
 # astronvim
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 git clone https://github.com/ypli0629/astronvim_config.git ~/.config/nvim/lua/user
@@ -82,6 +87,7 @@ tee -a ~/.zshrc <<-'EOF'
 	alias poff="unset http_proxy; unset https_proxy; unset all_proxy"
 
 	export PATH=~/.local/bin:~/go/bin:~/.local/bin:$PATH
+	___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
 EOF
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
