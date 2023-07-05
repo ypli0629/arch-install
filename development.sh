@@ -56,7 +56,7 @@ make
 sudo make install
 cd ../..
 
-cp -r fcitx5-themes/fish ~/.local/share/fcitx5/themes
+cp -r ./fcitx5-themes/fish ~/.local/share/fcitx5/themes
 
 # docker
 yay -S docker --noconfirm
