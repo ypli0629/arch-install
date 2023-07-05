@@ -1,5 +1,5 @@
 #!/bin/bash
-yay -Sy mutter-x11-scaling gnome-terminal-transparency --noconfirm
+yay -Sy mutter-x11-scaling gnome-terminal-transparency dconf-editor mesa-git --noconfirm
 
 for i in $(seq 1 9); do
 	gsettings set org.gnome.shell.keybindings switch-to-application-${i} '[]'

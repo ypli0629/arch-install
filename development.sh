@@ -8,7 +8,7 @@ yay -S autojump lazygit neovim google-chrome alacritty \
 	wireshark-qt wps-office-cn grub-customizer postman-bin sunloginclient steam flameshot \
 	xunlei-bin calibare wps-office-cn wps-office-mime-cn wps-office-mui-zh-cn \
 	virtualbox dingtalk-bin wemeet-bin xclip bear \
-	timeshift grub-btrfs obs-studio dconf-editor utools --noconfirm
+	timeshift grub-btrfs obs-studio utools docker-desktop --noconfirm
 
 # git
 git config --global user.email "liyapeng0629@gmail.com"
