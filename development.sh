@@ -74,6 +74,7 @@ yay -S clash-for-windows-bin --noconfirm
 yay -S nvm --noconfirm
 source /usr/share/nvm/init-nvm.sh
 
+rm -rf ~/.ssh
 unzip ./ssh/ssh.zip ~
 
 # astronvim
