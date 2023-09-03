@@ -79,20 +79,20 @@ unzip ./ssh/ssh.zip ~
 
 # astronvim
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
-git clone https://github.com/ypli0629/astronvim_config.git ~/.config/nvim/lua/user
+git clone git@github.com:ypli0629/astronvim_config.git ~/.config/nvim/lua/user
 
 yay -S zsh --noconfirm
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-tee -a ~/.zshrc <<-'EOF'
-	alias szsh="source ~/.zshrc"
-	alias nvim="lvim"
-	alias nzsh="nvim ~/.zshrc"
-	alias pon="export http_proxy=http://127.0.0.1:7890; export https_proxy=http://127.0.0.1:7890; export all_proxy=socks5://127.0.0.1:7890"
-	alias poff="unset http_proxy; unset https_proxy; unset all_proxy"
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# tee -a ~/.zshrc <<-'EOF'
+# 	alias szsh="source ~/.zshrc"
+# 	alias nvim="lvim"
+# 	alias nzsh="nvim ~/.zshrc"
+# 	alias pon="export http_proxy=http://127.0.0.1:7890; export https_proxy=http://127.0.0.1:7890; export all_proxy=socks5://127.0.0.1:7890"
+# 	alias poff="unset http_proxy; unset https_proxy; unset all_proxy"
 
-	export PATH=~/.local/bin:~/go/bin:~/.local/bin:$PATH
-	___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
-EOF
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-source ~/.zshrc
+# 	export PATH=~/.local/bin:~/go/bin:~/.local/bin:$PATH
+# 	___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
+# EOF
+# git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+# source ~/.zshrc
