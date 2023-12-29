@@ -59,15 +59,15 @@ cd ../..
 cp -r ./fcitx5-themes/fish ~/.local/share/fcitx5/themes
 
 # docker
-yay -S docker --noconfirm
-sudo mkdir -p /etc/docker
-sudo tee /etc/docker/daemon.json <<-'EOF'
-	{
-	  "registry-mirrors": ["https://omz9yq6r.mirror.aliyuncs.com"]
-	}
-EOF
-sudo systemctl start docker
-sudo systemctl enable docker
+# yay -S docker --noconfirm
+# sudo mkdir -p /etc/docker
+# sudo tee /etc/docker/daemon.json <<-'EOF'
+# 	{
+# 	  "registry-mirrors": ["https://omz9yq6r.mirror.aliyuncs.com"]
+# 	}
+# EOF
+# sudo systemctl start docker
+# sudo systemctl enable docker
 
 # yay -S clash-for-windows-bin --noconfirm
 
@@ -79,13 +79,12 @@ source /usr/share/nvm/init-nvm.sh
 
 # astronvim
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
-git clone git@github.com:ypli0629/astronvim_config.git ~/.config/nvim/lua/user
+git clone https://github.com/ypli0629/astronvim_config.git ~/.config/nvim/lua/user
 
 yay -S zsh --noconfirm
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 tee -a ~/.zshrc <<-'EOF'
 	alias szsh="source ~/.zshrc"
-	alias nvim="lvim"
 	alias nzsh="nvim ~/.zshrc"
 	alias pon="export http_proxy=http://127.0.0.1:7890; export https_proxy=http://127.0.0.1:7890; export all_proxy=socks5://127.0.0.1:7890"
 	alias poff="unset http_proxy; unset https_proxy; unset all_proxy"
