@@ -74,9 +74,6 @@ cp -r ./fcitx5-themes/fish ~/.local/share/fcitx5/themes
 yay -S nvm --noconfirm
 source /usr/share/nvm/init-nvm.sh
 
-# rm -rf ~/.ssh
-# unzip ./ssh/ssh.zip ~
-
 # astronvim
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 git clone https://github.com/ypli0629/astronvim_config.git ~/.config/nvim/lua/user
