@@ -21,3 +21,8 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "[
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ name 'gnome-terminal'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ command 'gnome-terminal'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ binding '<Super>Return'
+
+sudo usermod -aG input $USER
+yay -S gnome-x11-gesture-daemon
+wget https://github.com/harshadgavali/gnome-gesture-improvements/files/12841762/gestureImprovements%40gestures.zip
+gnome-extensions install -f ./gestureImprovements@gestures.zip
