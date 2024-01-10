@@ -69,7 +69,7 @@ cp -r ./fcitx5-themes/fish ~/.local/share/fcitx5/themes
 # sudo systemctl start docker
 # sudo systemctl enable docker
 
-# yay -S clash-for-windows-bin --noconfirm
+yay -S clash-verge-rev-bin --noconfirm
 
 yay -S nvm --noconfirm
 source /usr/share/nvm/init-nvm.sh
