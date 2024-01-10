@@ -1,5 +1,5 @@
 #!/bin/bash
-yay -Sy mutter-x11-scaling gnome-terminal-transparency dconf-editor mesa-git --noconfirm
+yay -Sy mutter-x11-scaling gnome-terminal-transparency dconf-editor gnome-browser-connector
 sudo rm -rf /usr/share/gnome-shell/extensions/*
 
 for i in $(seq 1 9); do
