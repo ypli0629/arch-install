@@ -8,7 +8,12 @@ yay -S autojump lazygit neovim google-chrome alacritty \
 	wireshark-qt wps-office-cn grub-customizer postman-bin sunloginclient steam flameshot \
 	xunlei-bin calibare wps-office-cn wps-office-mime-cn wps-office-mui-zh-cn \
 	virtualbox dingtalk-bin wemeet-bin xclip bear \
-	timeshift grub-btrfs obs-studio utools docker-desktop neofetch --noconfirm
+	timeshift grub-btrfs obs-studio utools docker-desktop neofetch clash-verge-rev-bin --noconfirm
+
+mkdir -p ~/Desktop/source
+mkdir -p ~/Desktop/work
+mkdir -p ~/Desktop/caffe
+mkdir -p ~/Desktop/learn
 
 # git
 git config --global user.email "liyapeng0629@gmail.com"
@@ -68,8 +73,6 @@ cp -r ./fcitx5-themes/fish ~/.local/share/fcitx5/themes
 # EOF
 # sudo systemctl start docker
 # sudo systemctl enable docker
-
-yay -S clash-verge-rev-bin --noconfirm
 
 yay -S nvm --noconfirm
 source /usr/share/nvm/init-nvm.sh
