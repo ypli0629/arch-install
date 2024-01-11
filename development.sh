@@ -8,7 +8,8 @@ yay -S autojump lazygit neovim google-chrome alacritty \
 	wireshark-qt wps-office-cn grub-customizer postman-bin sunloginclient steam flameshot \
 	xunlei-bin calibare wps-office-cn wps-office-mime-cn wps-office-mui-zh-cn \
 	virtualbox dingtalk-bin wemeet-bin xclip bear \
-	timeshift grub-btrfs obs-studio utools docker-desktop neofetch clash-verge-rev-bin --noconfirm
+	timeshift grub-btrfs obs-studio utools docker-desktop neofetch clash-verge-rev-bin \
+	baidunetdisk-bin --noconfirm
 
 mkdir -p ~/Desktop/source
 mkdir -p ~/Desktop/work
