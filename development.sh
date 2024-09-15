@@ -36,7 +36,7 @@ cp ./config/maven/settings.xml ~/.m2/
 yay -S go --noconfirm
 yay -S goland goland-jre --noconfirm
 go install github.com/swaggo/swag/cmd/swag@latest
-go install github.com/cosmtrek/air@latest
+go install github.com/air-verse/air@latest
 
 # python
 yay -S python python-pip --noconfirm
